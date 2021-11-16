@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://www.lingoapp.com/100196/a/m23n6x?asset_token=Q3nDkoMl5SbChbeCOujPz3859VwsVjT-umU7xx6xznw&kit_token=Z4fkH1fE8vVMT0OnnLR-3BHZVAUSvAEGiAk6OYGRp68&v=0" rel="stylesheet">
+    <link href="https://www.lingoapp.com/100196/a/m23n8x?asset_token=Gai0v4iH3papAv_9tpylacupcoOSm1nW0Qm-Fd70pxg&kit_token=Z4fkH1fE8vVMT0OnnLR-3BHZVAUSvAEGiAk6OYGRp68&v=0" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,700&family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>West-MEC PD Circle</title>
+</head>
+<body>
+        <div class="navbar">
+            <a id="logo" href="https://pdcircle.west-mec.org/">
+                <img src="images/Logo.png">
+            </a>
+
+            <a id="sfc" href="https://pdcircle.west-mec.org/courses/search">Search for class</a>
+            <a id="nav" href="https://pdcircle.west-mec.org/courses/calendar">Calendar View</a>
+            <a id="nav" href="https://pdcircle.west-mec.org/contact">Contact</a>
+            <button class="icon" onclick="document.getElementById('Form').style.display='block'"><img src="images/LoginIcon .png" alt="Icon" style="height: 40px; width:40px;"></button>
+        </div>
+
+        <div id="Form" class="form">
+            <form class="form-content animate" action="/action_page.php" method="post">
+              
+              <div class="container" style="background-color:white">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"  
+                placeholder="Enter Password" name="psw" required>
+                  
+                <button id="submit" type="submit" class="login">Login</button>
+              </div>
+          
+              <button type="button" onclick="document.getElementById('Form').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+
+        <div id="banner">
+            <div id="bannerstyle">
+                <p id="bannerheader">
+                    Welcome to West-MEC Professional Development
+                </p>
+                <p id="bannertext">
+                    From whatever walk of life, you’ve found us, we are committed to your growth. We believe growth is a journey and we hope to be a part of your story. Explore our series of classes. A better <b>US</b> through a better <b>YOU</b> begins now.
+                </p>
+            </div>
+        </div>
+    
+    
+        <div class="content">
+            <a class="c1" href="https://pdcircle.west-mec.org/courses/list">Course List</a>
+            <a class="c1" href="https://pdcircle.west-mec.org/courses/calendar">Course Calendar</a>
+            <a class="c1" href="https://pdcircle.west-mec.org/courses/search">Search Courses</a>
+        </div>
+
+        <div class="s1">
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/certification';" class="series CRT">Certification Series<hr></button>
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/ctso';" class="series CTSO">CTSO Series <hr></button>
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/student-services';" class="series SSS">Student Services Series <hr></button>
+        </div>
+        <div class="s2">
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/technology';" class="series tech">Technology Series <hr></button>
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/think-tank';" class="series TT">Think Tank <hr></button>
+            <button onclick="window.location.href='https://pdcircle.west-mec.org/courses/list';" class="series AC">All Courses <hr></button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer class="footer">
+            <a id="logo2" href="https://west-mec.edu/" target="_blank" style>
+                <img src="images/West-MEC.png">
+            </a>
+            <a id="sf2"href="https://pdcircle.west-mec.org/courses/search">Search for class</a>
+            <a id="flink" href="https://pdcircle.west-mec.org/courses/calendar">Calendar View</a>
+            <a id="flink" href="https://pdcircle.west-mec.org/contact">Contact</a>
+            <button class="icon2" onclick="document.getElementById('Form2').style.display='block'"><img src="images/LoginIcon2.png" alt="Icon" style="height: 40px; width:40px;"></button>
+        </footer>
+
+        <div id="Form2" class="form2">
+            <form class="form-content2 animate2" action="/action_page.php" method="post">
+              
+              <div class="container2" style="background-color:white">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email2" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw2"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"  
+                placeholder="Enter Password" name="psw" required>
+                  
+                <button id="submit2" type="submit" class="login2">Login</button>
+              </div>
+          
+              <button type="button" onclick="document.getElementById('Form2').style.display='none'" class="cancelbtn2">Cancel</button>
+                <span class="psw2"><a href="#">Forgot password?</a></span>
+            </form>
+              </div>
+</body>
+</html>
